@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #eee;
+    color: #3c4858;
+    min-height: 100vh;
+}
+app-movies {
+    float: right;
+    width: 100%;
+    padding-left: 15px;
+}
+app-movies-detail {
+    float: right;
+    width: 100%;
+    padding-left: 15px;
+}

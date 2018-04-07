@@ -1,0 +1,38 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let m of movies">
+        <div class="contain-movies" *ngFor="let i of imagens">
+          <div class="conter-img">
+            <img src="{{i.url}}" alt="" class="img-responsive-mini">
+          </div>
+          <h1>{{m.title}}</h1>
+            <p class="sub">Director</p>
+            <p>{{m.director}}</p>
+            <p class="sub">Producer</p>
+            <p>{{m.producer}}</p>
+            <a [routerLink]="['/teste', m.title]">Veja mais</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+<div class="col-sm-12">
+<div class="col-sm-4" *ngFor="let m of movies">
+  <div class="col-sm-4">
+      <div class="" *ngFor="let i of imagens">
+          <img src="{{i.url}}" alt="" class="">
+      </div>
+  </div>
+  <div class="col-sm-6">
+      <h1>{{m.title}}</h1>
+            <p class="sub">Director</p>
+            <p>{{m.director}}</p>
+            <p class="sub">Producer</p>
+            <p>{{m.producer}}</p>
+  </div>
+</div>
+</div>
+-->

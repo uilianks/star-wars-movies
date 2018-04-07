@@ -1,0 +1,17 @@
+<div class="col-sm-12">
+<div class="sidebar row">
+    <div class="head">
+      <div class="col-sm-3">
+          <img src="https://i.pinimg.com/originals/73/db/97/73db97c0c4a9c9b009d69f21ea48ecdc.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-sm-9">
+        <h1>Star Wars Movies</h1>
+      </div>
+    </div>
+    <div class="body">
+      <div class="ul" style="list-style-type:none" *ngFor="let m of movies">
+        <li><a [routerLink]="['/teste', m.title]"><i class="fas fa-film"></i>{{m.title}}</a></li>
+      </div>
+    </div>
+</div>
+</div>
